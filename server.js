@@ -43,10 +43,15 @@ app.use("/inv", inventoryRoute)
 /* ***********************
  * Session Configuration
  *************************/
+/*
 if (!process.env.SESSION_SECRET) {
   console.error("❌ SESSION_SECRET is missing in .env file");
   process.exit(1);
 }
+
+*/
+
+
 
 app.use(
   session({
