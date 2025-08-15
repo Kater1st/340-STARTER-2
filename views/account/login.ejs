@@ -1,0 +1,35 @@
+<h1 class="h1"><%- title %></h1>
+<%- messages() %>
+
+<form id="loginForm" method="POST" action="/account/login" class="form">
+  <label class="input-line">
+    <span class="bold">Email:</span>
+    <input
+      type="email"
+      name="account_email"
+      required
+      placeholder="Please enter a valid email address"
+    />
+  </label>
+  <label class="input-line">
+    <span class="bold">Password:</span>
+    <span
+      >Password must be at least 12 characters and contain at least 1 number,
+      <br />
+      1 capital letter and 1 special character</span
+    >
+    <input type="password" name="account_password" />
+  </label>
+  <label class="input-line">
+    <input
+      class="form-submit-button"
+      type="submit"
+      name="submit"
+      id="logbtn"
+      value="Sign-in"
+    />
+  </label>
+  <p class="sign-up-suggestion">
+    No account? <a class="black" href="/account/register">Sign-up</a>
+  </p>
+</form>
